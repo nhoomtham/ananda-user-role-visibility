@@ -1,0 +1,12 @@
+INSERT INTO `ananda`.`column_view` (`name`,`title`) VALUES ("flowStage", "Flow Stage");
+INSERT INTO `ananda`.`column_view` (`name`,`title`) VALUES ("dueIn", "Due in Days");
+INSERT INTO `ananda`.`column_view` (`name`,`title`) VALUES ("offerDate", "Date (offer date)");
+INSERT INTO `ananda`.`column_view` (`name`,`title`) VALUES ("assignedDate", "Last Modified Date");
+INSERT INTO `ananda`.`column_view` (`name`,`title`) VALUES ("lastModifiedDate", "Last Modified");
+INSERT INTO `ananda`.`column_view` (`name`,`title`) VALUES ("priority", "Priority");
+INSERT INTO `ananda`.`column_view` (`name`,`title`) VALUES ("landCodeName", "Land Code Name");
+INSERT INTO `ananda`.`column_view` (`name`,`title`) VALUES ("landName", "Land Name");
+INSERT INTO `ananda`.`column_view` (`name`,`title`) VALUES ("sellerCode", "Seller Code");
+INSERT INTO `ananda`.`column_view` (`name`,`title`) VALUES ("sellerFullName", "Seller Full Name");
+INSERT INTO `ananda`.`column_view` (`name`,`title`) VALUES ("brand", "Brand");
+INSERT INTO `ananda`.`column_view` (`name`,`title`) VALUES ("remark", "Remark");
