@@ -1,10 +1,10 @@
-package com.sample.repository;
+package com.gopomelo.projects.ananda.landsourcing.repository;
 
 import javax.transaction.Transactional;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.sample.models.User;
+import com.gopomelo.projects.ananda.landsourcing.models.User;
 
 /**
  * A DAO for the entity User is simply created by extending the CrudRepository
@@ -13,7 +13,6 @@ import com.sample.models.User;
  * The magic is that such methods must not be implemented, and moreover it is
  * possible create new query methods working only by defining their signature!
  * 
- * @author netgloo
  */
 @Transactional
 public interface UserDao extends CrudRepository<User, Long> {

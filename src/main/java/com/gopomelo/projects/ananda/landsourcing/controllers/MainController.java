@@ -1,4 +1,4 @@
-package com.sample.controllers;
+package com.gopomelo.projects.ananda.landsourcing.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -17,7 +17,7 @@
 # [START runtime]
 runtime: java
 env: flex
-service: ananda-workflow-visibility-manager
+service: ananda-user-manager
 
 runtime_config:  # Optional
   jdk: openjdk8

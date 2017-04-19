@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.gopomelo.projects.ananda.landsourcing</groupId>
-	<artifactId>ananda-workflow-visibility-manager</artifactId>
+	<artifactId>ananda-user-manager</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -14,14 +14,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.1.RELEASE</version>
+		<version>1.4.2.RELEASE</version>
 		<relativePath />
 	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>com.sample.Application</start-class>
-		<java.version>1.8</java.version>
+		<java.version>1.7</java.version>
 		<appengine.maven.plugin>1.2.1</appengine.maven.plugin>
 		<gcloud.maven.plugin>2.0.9.133.v201611104</gcloud.maven.plugin>
 	</properties>
