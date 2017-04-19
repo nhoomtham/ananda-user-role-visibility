@@ -16,22 +16,22 @@
 
 # [START runtime]
 runtime: java
-env: flex
+# env: flex
 service: ananda-user-manager
 
-runtime_config:  # Optional
-  jdk: openjdk8
+# runtime_config:  # Optional
+#  jdk: openjdk7
 
-handlers:
-- url: /.*
-  script: this field is required, but ignored
-  secure: always  # Require HTTPS
+# handlers:
+# - url: /.*
+#   script: this field is required, but ignored
+#   secure: always  # Require HTTPS
 
-manual_scaling:
-  instances: 1
+# manual_scaling:
+#   instances: 1
 
-resources:
-  cpu: 1
-  memory_gb: 0.5
-  disk_size_gb: 10
+# resources:
+#   cpu: 1
+#   memory_gb: 0.5
+#   disk_size_gb: 10
 # [END runtime]

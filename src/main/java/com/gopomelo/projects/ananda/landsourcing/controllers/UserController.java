@@ -44,9 +44,6 @@ public class UserController {
 		User user = null;
 
 		try {
-			LOG.info("-------> name=" + name);
-			LOG.info("-------> email=" + email);
-			
 			user = new User(email, name);
 			userDao.save(user);
 		} catch (Exception ex) {
