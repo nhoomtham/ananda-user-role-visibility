@@ -1,6 +1,6 @@
 package com.gopomelo.projects.ananda.landsourcing.controllers.vo;
 
-public class RoleColumnView {
+public class UserRoleColumnViewVO {
 
 	private String title;
 

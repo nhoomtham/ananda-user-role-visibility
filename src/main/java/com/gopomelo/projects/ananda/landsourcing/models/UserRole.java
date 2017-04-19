@@ -35,6 +35,11 @@ public class UserRole {
 	@JoinTable(name = "user_role_user", joinColumns = @JoinColumn(name = "user_role_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"))
 	private List<User> users;
 
+	public UserRole(String name, String description) {
+		this.name = name;
+		this.description = description;
+	}
+
 	public long getId() {
 		return id;
 	}
