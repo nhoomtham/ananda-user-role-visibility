@@ -23,9 +23,9 @@ import com.gopomelo.projects.ananda.landsourcing.repository.RoleDao;
  *
  */
 @Controller
-public class UserRoleController {
+public class UserRoleColumnViewController {
 
-	private Logger LOG = Logger.getLogger(UserRoleController.class);
+	private Logger LOG = Logger.getLogger(UserRoleColumnViewController.class);
 
 	// ------------------------
 	// PRIVATE FIELDS
