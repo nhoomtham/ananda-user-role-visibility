@@ -13,71 +13,44 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
 @Table(name = "user_role")
 public class UserRole {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Getter
+	@Setter
 	private long id;
 
 	@NotNull
+	@Getter
+	@Setter
 	private String name; // LD, LS1, LS2, ...
 
 	@NotNull
+	@Getter
+	@Setter
 	private String description;
 
 	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "user_role_column_view", joinColumns = @JoinColumn(name = "user_role_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "column_view_id", referencedColumnName = "id"))
+	@Getter
+	@Setter
 	private List<ColumnView> columns;
 
 	@ManyToMany
 	@JoinTable(name = "user_role_user", joinColumns = @JoinColumn(name = "user_role_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"))
+	@Getter
+	@Setter
 	private List<User> users;
 
 	public UserRole(String name, String description) {
 		this.name = name;
 		this.description = description;
-	}
-
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	public List<ColumnView> getColumns() {
-		return columns;
-	}
-
-	public void setColumns(List<ColumnView> columns) {
-		this.columns = columns;
-	}
-
-	public List<User> getUsers() {
-		return users;
-	}
-
-	public void setUsers(List<User> users) {
-		this.users = users;
 	}
 
 }

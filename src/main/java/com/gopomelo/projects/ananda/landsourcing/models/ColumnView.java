@@ -10,6 +10,9 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
+import lombok.Data;
+
+@Data
 @Entity
 @Table(name = "column_view")
 public class ColumnView {
@@ -26,29 +29,5 @@ public class ColumnView {
 
 	@ManyToMany(mappedBy = "columns")
 	private List<UserRole> roles;
-
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
 
 }
