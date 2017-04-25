@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.gopomelo.projects.ananda.landsourcing</groupId>
-	<artifactId>ananda-user-manager</artifactId>
+	<artifactId>ananda-user-role-visibility</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>${project.artifactId}</name>
-	<description>Use Spring Data JPA + Hibernate + MySQL in Spring Boot</description>
+	<description>user roles visibility data project backed with firebase</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -53,11 +53,6 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
@@ -67,17 +62,6 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- end::spring -->
-
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>com.vividsolutions</groupId>
-			<artifactId>jts</artifactId>
-			<version>1.13</version>
-		</dependency>
 
 		<dependency>
 			<groupId>com.google.cloud</groupId>
@@ -114,7 +98,6 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<scope>provided</scope>
 		</dependency>
 
 	</dependencies>

@@ -5,8 +5,6 @@ import java.util.Arrays;
 
 import javax.annotation.PostConstruct;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,16 +16,33 @@ import com.google.firebase.auth.FirebaseCredentials;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Configuration
 public class FirebaseConfig {
 
-	private static final Logger LOG = LoggerFactory.getLogger(FirebaseConfig.class);
-
+	// value will be overridden from application.properties file
 	@Value("${ananda.firebase.database.url:https://gcp-labs-nk.firebaseio.com}")
-	private String databaseUrl;
+	private String fbDBUrl;
 
-	@Value("${ananda.config.path:service-accnt-gcp-labs-nk.json}")
-	private String configPath;
+	// https://ananda-cloud.firebaseio.com/rest/saving-data/user_role/roles
+	@Value("${ananda.firebase.user.roles.path:/rest/saving-data/user_role/roles}")
+	private String fbUserRolesPath;
+
+	// value will be overridden from application.properties file
+	@Value("${ananda.serviceaccount.json:dev-serviceaccount.json}")
+	private String serviceAccountJson;
+
+	@Bean
+	public String firebaseDBUrl() {
+		return fbDBUrl;
+	}
+
+	@Bean
+	public String firebaseUserRolesPath() {
+		return fbUserRolesPath;
+	}
 
 	@Bean
 	public DatabaseReference firebaseDatabse() {
@@ -39,12 +54,13 @@ public class FirebaseConfig {
 	public GoogleCredential googelCredentialScope() {
 		GoogleCredential scoped = null;
 		try {
-			InputStream serviceAccount = FirebaseConfig.class.getClassLoader().getResourceAsStream(configPath);
+			InputStream serviceAccount = FirebaseConfig.class.getClassLoader().getResourceAsStream(serviceAccountJson);
 			GoogleCredential googleCred = GoogleCredential.fromStream(serviceAccount);
 			scoped = googleCred.createScoped(Arrays.asList("https://www.googleapis.com/auth/firebase.database",
 					"https://www.googleapis.com/auth/userinfo.email"));
 		} catch (Exception e) {
-			LOG.error(e.getMessage(), e);
+
+			log.error(e.getMessage(), e);
 		}
 		return scoped;
 	}
@@ -57,9 +73,9 @@ public class FirebaseConfig {
 		 * 
 		 * Create service account , download json
 		 */
-		InputStream serviceAccount = FirebaseConfig.class.getClassLoader().getResourceAsStream(configPath);
+		InputStream serviceAccount = FirebaseConfig.class.getClassLoader().getResourceAsStream(serviceAccountJson);
 		FirebaseOptions options = new FirebaseOptions.Builder()
-				.setCredential(FirebaseCredentials.fromCertificate(serviceAccount)).setDatabaseUrl(databaseUrl).build();
+				.setCredential(FirebaseCredentials.fromCertificate(serviceAccount)).setDatabaseUrl(fbDBUrl).build();
 		FirebaseApp.initializeApp(options);
 
 	}
