@@ -1,0 +1,35 @@
+{ 
+	"formFields": {
+		"information": {
+			"visible": true,
+			"currentWorkingBrand": {"visible": true,"disable": true},
+			"approval": {"visible": true,"disable": true},
+			"approvalBrand": {"visible": true,"disable": true},
+			"landInformation": {"visible": true,"disable": false, 
+				"fields": {
+					"remarkLD" : { "visible":true, "disable":false},
+					"remarkLS" : { "visible":false, "disable":true}
+				}
+			},
+			"landOption": {"visible": true,"disable": false}
+		},
+		"landShape":{
+			"visible": true,
+			"map": {"visible": true,"disable": false}
+		},
+		"fileUpload":{
+			"visible": true,
+			"landDocument": {"visible": true,"disable": false}
+		},
+		"spa":{
+			"visible": false,
+			"spaAppointment": {"visible": false,"disable": false, 
+				"fields": {}
+			},
+			"transferLot": {"visible": false,"disable": false, 
+				"fields": {}
+			}
+		}
+	}
+}
+

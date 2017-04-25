@@ -1,0 +1,136 @@
+
+{
+"roles": {
+  "LD": {
+    "columns": [
+      { "title":"Flow Stage","field":"flowStage","visible":true },
+      { "title":"Due in Days","field":"dueInDays","visible":true },
+      { "title":"Date (offer date)","field":"offerDate","visible":true },
+      { "title":"Last Modified Date","field":"lastUpdatedDate","visible":true },
+      { "title":"Last Modified By","field":"lastUpdatedBy","visible":true },
+      { "title":"Priority","field":"landPriority","visible":true },
+      { "title":"Land Code Name","field":"landCodeName","visible":true },
+      { "title":"Land Name","field":"landName","visible":true },
+      { "title":"Seller Code","field":"sellerCode","visible":true },
+      { "title":"Seller Full Name","field":"sellerFullName","visible":true },
+      { "title":"Brand","field":"landApprovalBrand","visible":true },
+      { "title":"Remark","field":"remark","visible":true}
+    ],
+    "actions": {
+      "myTasks":    { "saveDraft": true, "submit": true,"reject": true, "request": true, "viewEdit": true, "viewUpload": true, "dispose": true, "markAsNonPotential": true, "delete": true  },
+      "myRequest":  { "saveDraft": true,"return": true,"viewEdit": true,"viewUpload": true,"dispose": true,"markAsNonPotential": true  },
+      "landDB":     { "viewUpload": true,"dispose": true,"markAsNonPotential": true }
+    }
+  }
+  ,
+  "LS": {
+    "columns": [
+      { "title":"Flow Stage","field":"flowStage","visible":true },
+      { "title":"Due in Days","field":"dueInDays","visible":true },
+      { "title":"Date (offer date)","field":"offerDate","visible":true },
+      { "title":"Last Modified Date","field":"lastUpdatedDate","visible":true },
+      { "title":"Last Modified By","field":"lastUpdatedBy","visible":true },
+      { "title":"Priority","field":"landPriority","visible":true },
+      { "title":"Land Code Name","field":"landCodeName","visible":true },
+      { "title":"Land Name","field":"landName","visible":true },
+      { "title":"Seller Code","field":"sellerCode","visible":true },
+      { "title":"Seller Full Name","field":"sellerFullName","visible":true },
+      { "title":"Brand","field":"landApprovalBrand","visible":true },
+      { "title":"Remark","field":"remark","visible":true}
+    ],
+    "actions": {
+      "myTasks":    { "saveDraft": true, "submit": true,"reject": true, "request": true, "viewEdit": true, "viewUpload": true, "dispose": true, "markAsNonPotential": true, "delete": true  },
+      "myRequest":  { "saveDraft": true,"return": true,"viewEdit": true,"viewUpload": true,"dispose": true,"markAsNonPotential": true  },
+      "landDB":     { "viewUpload": true,"dispose": true,"markAsNonPotential": true }
+    }
+  }
+  ,
+  "BD": {
+    "columns": [
+      { "title":"Flow Stage","field":"flowStage","visible":true },
+      { "title":"Due in Days","field":"dueInDays","visible":true },
+      { "title":"Date (offer date)","field":"offerDate","visible":true },
+      { "title":"Last Modified Date","field":"lastUpdatedDate","visible":true },
+      { "title":"Last Modified By","field":"lastUpdatedBy","visible":true },
+      { "title":"Priority","field":"landPriority","visible":true },
+      { "title":"Land Code Name","field":"landCodeName","visible":true },
+      { "title":"Land Name","field":"landName","visible":true },
+      { "title":"Seller Code","field":"sellerCode","visible":true },
+      { "title":"Seller Full Name","field":"sellerFullName","visible":true },
+      { "title":"Brand","field":"landApprovalBrand","visible":true },
+      { "title":"Remark","field":"remark","visible":true}
+    ],
+    "actions": {
+      "myTasks":    { "saveDraft": true, "submit": true,"reject": true, "request": true, "viewEdit": true, "viewUpload": true, "dispose": true, "markAsNonPotential": true, "delete": true  },
+      "myRequest":  { "saveDraft": true,"return": true,"viewEdit": true,"viewUpload": true,"dispose": true,"markAsNonPotential": true  },
+      "landDB":     { "viewUpload": true,"dispose": true,"markAsNonPotential": true }
+    }
+  }
+  ,
+  "DD": {
+    "columns": [
+      { "title":"Flow Stage","field":"flowStage","visible":true },
+      { "title":"Due in Days","field":"dueInDays","visible":true },
+      { "title":"Date (offer date)","field":"offerDate","visible":true },
+      { "title":"Last Modified Date","field":"lastUpdatedDate","visible":true },
+      { "title":"Last Modified By","field":"lastUpdatedBy","visible":true },
+      { "title":"Priority","field":"landPriority","visible":true },
+      { "title":"Land Code Name","field":"landCodeName","visible":true },
+      { "title":"Land Name","field":"landName","visible":true },
+      { "title":"Seller Code","field":"sellerCode","visible":true },
+      { "title":"Seller Full Name","field":"sellerFullName","visible":true },
+      { "title":"Brand","field":"landApprovalBrand","visible":true },
+      { "title":"Remark","field":"remark","visible":true}
+    ],
+    "actions": {
+      "myTasks":    { "saveDraft": true, "submit": true,"reject": true, "request": true, "viewEdit": true, "viewUpload": true, "dispose": true, "markAsNonPotential": true, "delete": true  },
+      "myRequest":  { "saveDraft": true,"return": true,"viewEdit": true,"viewUpload": true,"dispose": true,"markAsNonPotential": true  },
+      "landDB":     { "viewUpload": true,"dispose": true,"markAsNonPotential": true }
+    }
+  }
+  ,
+  "RSK": {
+    "columns": [
+      { "title":"Flow Stage","field":"flowStage","visible":true },
+      { "title":"Due in Days","field":"dueInDays","visible":true },
+      { "title":"Date (offer date)","field":"offerDate","visible":true },
+      { "title":"Last Modified Date","field":"lastUpdatedDate","visible":true },
+      { "title":"Last Modified By","field":"lastUpdatedBy","visible":true },
+      { "title":"Priority","field":"landPriority","visible":true },
+      { "title":"Land Code Name","field":"landCodeName","visible":true },
+      { "title":"Land Name","field":"landName","visible":true },
+      { "title":"Seller Code","field":"sellerCode","visible":true },
+      { "title":"Seller Full Name","field":"sellerFullName","visible":true },
+      { "title":"Brand","field":"landApprovalBrand","visible":true },
+      { "title":"Remark","field":"remark","visible":true}
+    ],
+    "actions": {
+      "myTasks":    { "saveDraft": true, "submit": true,"reject": true, "request": true, "viewEdit": true, "viewUpload": true, "dispose": true, "markAsNonPotential": true, "delete": true  },
+      "myRequest":  { "saveDraft": true,"return": true,"viewEdit": true,"viewUpload": true,"dispose": true,"markAsNonPotential": true  },
+      "landDB":     { "viewUpload": true,"dispose": true,"markAsNonPotential": true }
+    }
+  }
+  ,
+  "MI": {
+    "columns": [
+      { "title":"Flow Stage","field":"flowStage","visible":true },
+      { "title":"Due in Days","field":"dueInDays","visible":true },
+      { "title":"Date (offer date)","field":"offerDate","visible":true },
+      { "title":"Last Modified Date","field":"lastUpdatedDate","visible":true },
+      { "title":"Last Modified By","field":"lastUpdatedBy","visible":true },
+      { "title":"Priority","field":"landPriority","visible":true },
+      { "title":"Land Code Name","field":"landCodeName","visible":true },
+      { "title":"Land Name","field":"landName","visible":true },
+      { "title":"Seller Code","field":"sellerCode","visible":true },
+      { "title":"Seller Full Name","field":"sellerFullName","visible":true },
+      { "title":"Brand","field":"landApprovalBrand","visible":true },
+      { "title":"Remark","field":"remark","visible":true}
+    ],
+    "actions": {
+      "myTasks":    { "saveDraft": true, "submit": true,"reject": true, "request": true, "viewEdit": true, "viewUpload": true, "dispose": true, "markAsNonPotential": true, "delete": true  },
+      "myRequest":  { "saveDraft": true,"return": true,"viewEdit": true,"viewUpload": true,"dispose": true,"markAsNonPotential": true  },
+      "landDB":     { "viewUpload": true,"dispose": true,"markAsNonPotential": true }
+    }
+  }
+  }
+}
