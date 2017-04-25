@@ -14,15 +14,16 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.2.RELEASE</version>
+		<version>1.5.2.RELEASE</version>
 		<relativePath />
 	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.7</java.version>
+		<java.version>1.8</java.version>
 		<appengine.maven.plugin>1.2.1</appengine.maven.plugin>
-		<gcloud.maven.plugin>2.0.9.133.v201611104</gcloud.maven.plugin>
+		<firebase.admin.version>4.1.6</firebase.admin.version>
+		<!-- <gcloud.maven.plugin>2.0.9.133.v201611104</gcloud.maven.plugin> -->
 	</properties>
 
 	<dependencies>
@@ -63,17 +64,17 @@
 		</dependency>
 		<!-- end::spring -->
 
-		<dependency>
-			<groupId>com.google.cloud</groupId>
-			<artifactId>google-cloud-storage</artifactId>
-			<version>0.9.4-beta</version>
-			<exclusions>
-				<exclusion>
-					<groupId>javax.servlet</groupId>
-					<artifactId>servlet-api</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>com.google.cloud</groupId> -->
+		<!-- <artifactId>google-cloud-storage</artifactId> -->
+		<!-- <version>0.9.4-beta</version> -->
+		<!-- <exclusions> -->
+		<!-- <exclusion> -->
+		<!-- <groupId>javax.servlet</groupId> -->
+		<!-- <artifactId>servlet-api</artifactId> -->
+		<!-- </exclusion> -->
+		<!-- </exclusions> -->
+		<!-- </dependency> -->
 
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -91,7 +92,7 @@
 		<dependency>
 			<groupId>com.google.firebase</groupId>
 			<artifactId>firebase-admin</artifactId>
-			<version>4.1.6</version>
+			<version>${firebase.admin.version}</version>
 		</dependency>
 		<!-- end: Firebase[] -->
 
@@ -118,11 +119,11 @@
 			<!-- end::GAE[] -->
 
 			<!-- tag::gcloud[] -->
-			<plugin>
-				<groupId>com.google.appengine</groupId>
-				<artifactId>gcloud-maven-plugin</artifactId>
-				<version>${gcloud.maven.plugin}</version>
-			</plugin>
+			<!-- <plugin> -->
+			<!-- <groupId>com.google.appengine</groupId> -->
+			<!-- <artifactId>gcloud-maven-plugin</artifactId> -->
+			<!-- <version>${gcloud.maven.plugin}</version> -->
+			<!-- </plugin> -->
 			<!-- end::gcloud[] -->
 
 			<plugin>
