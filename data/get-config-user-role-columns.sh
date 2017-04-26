@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #export PROJ_NAME=gcp-labs-nk
 export PROJ_NAME=ananda-cloud
 export FB_URL="https://${ PROJ_NAME}.firebaseio.com"
