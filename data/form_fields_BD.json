@@ -22,13 +22,20 @@
 			"landDocument": {"visible": true,"disable": false}
 		},
 		"spa":{
-			"visible": false,
-			"spaAppointment": {"visible": false,"disable": false, 
+			"visible": true,
+			"spaAppointment": {"visible": true,"disable": false, 
 				"fields": {}
 			},
-			"transferLot": {"visible": false,"disable": false, 
+			"transferLot": {"visible": true,"disable": false, 
 				"fields": {}
-			}
+			},
+			"flowStage": [ 
+				"update_spa_appointment_date",
+				"update_spa_signed_date",
+				"land_transferred",
+				"submit_gov_doc",
+				"proj_kick_off"
+			]
 		}
 	}
 }

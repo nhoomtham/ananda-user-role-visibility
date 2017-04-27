@@ -2,9 +2,9 @@
 	"formFields": {
 		"information": {
 			"visible": true,
-			"currentWorkingBrand": {"visible": true,"disable": true},
-			"approval": {"visible": true,"disable": true},
-			"approvalBrand": {"visible": true,"disable": true},
+			"currentWorkingBrand": {"visible": false,"disable": true},
+			"approval": {"visible": false,"disable": true},
+			"approvalBrand": {"visible": false,"disable": true},
 			"landInformation": {"visible": true,"disable": false, 
 				"fields": {
 					"remarkLD" : { "visible":true, "disable":false},
@@ -22,13 +22,7 @@
 			"landDocument": {"visible": true,"disable": false}
 		},
 		"spa":{
-			"visible": false,
-			"spaAppointment": {"visible": false,"disable": false, 
-				"fields": {}
-			},
-			"transferLot": {"visible": false,"disable": false, 
-				"fields": {}
-			}
+			"visible": false
 		}
 	}
 }

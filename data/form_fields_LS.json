@@ -8,7 +8,7 @@
 			"landInformation": {"visible": true,"disable": false, 
 				"fields": {
 					"remarkLD" : { "visible":true, "disable":false},
-					"remarkLS" : { "visible":false, "disable":true}
+					"remarkLS" : { "visible":true, "disable":false}
 				}
 			},
 			"landOption": {"visible": true,"disable": false}
@@ -22,13 +22,16 @@
 			"landDocument": {"visible": true,"disable": false}
 		},
 		"spa":{
-			"visible": false,
-			"spaAppointment": {"visible": false,"disable": false, 
-				"fields": {}
-			},
-			"transferLot": {"visible": false,"disable": false, 
-				"fields": {}
-			}
+			"visible": true,
+			"spaAppointment": {"visible": true,"disable": true},
+			"transferLot": {"visible": true,"disable": true},
+			"flowStage": [ 
+				"update_spa_appointment_date",
+				"update_spa_signed_date",
+				"land_transferred",
+				"submit_gov_doc",
+				"proj_kick_off"
+			]
 		}
 	}
 }

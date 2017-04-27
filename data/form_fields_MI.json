@@ -22,13 +22,7 @@
 			"landDocument": {"visible": true,"disable": false}
 		},
 		"spa":{
-			"visible": false,
-			"spaAppointment": {"visible": false,"disable": false, 
-				"fields": {}
-			},
-			"transferLot": {"visible": false,"disable": false, 
-				"fields": {}
-			}
+			"visible": false
 		}
 	}
 }
